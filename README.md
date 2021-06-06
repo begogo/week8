@@ -11,6 +11,9 @@
 - 데이터의 독립성이 높고, 고수준의 데이터 조작언어(DML-Data Manipulation Language)을 사용하여 결합, 제약, 투영 등의 관계 조작에 의해 비약적으로 표현능력을 높일 수 있고, 자유롭게 구조를 변경할 수 있음
 - RDBMS: 관계형 데이터베이스를 생성하고 수정하고 관리할 수 있는 소프트웨어
 
+![](/Screenshot_1.png)
+
+
 ## RDBMS의 종류
 - ORACLE, MYSQL, MariaDB, MS SQL SERVER 등
 
@@ -139,6 +142,8 @@ Rollback연산
 
 - **트랜잭션의 상태**
 
+![](/트랜잭션.jpg)
+
   활동(Active) : 트랜잭션이 실행중인 상태
 
   실패(Failed) : 트랜잭션 실행에 오류가 발생하여 중단된 상태
@@ -177,3 +182,25 @@ MYSQL 실습 (버전 7.4.19, CLI 사용)
     INSERT INTO post (title,description,created,author,ip) VALUES('test','hello',NOW(),'user',INET_ATON('1.1.1.1'));
     SELECT * FROM post;
     
+![](/Screenshot_2.png)
+
+
+
+-------------------------
+
+
+참고자료
+
+DB개념  
+https://runcoding.tistory.com/3  
+https://jwprogramming.tistory.com/52  
+https://sorrow16.tistory.com/39  
+
+
+DB언어  
+https://coding-factory.tistory.com/217?category=784883
+
+
+트랜잭션  
+https://coding-factory.tistory.com/226?category=784883
+
